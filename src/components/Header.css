@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap');
+.Title{
+    color: gold;
+    font-weight: bold;
+    font-family: Montserrat;
+    cursor: pointer;
+    flex: 1;
+}

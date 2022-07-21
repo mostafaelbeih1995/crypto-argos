@@ -1,0 +1,12 @@
+.Banner {
+    background-image: url(../../public/banner2.jpg);
+} 
+
+
+.Bannercontext {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    justify-content: space-around;
+}
