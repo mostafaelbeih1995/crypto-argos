@@ -1,0 +1,43 @@
+.row {
+    background-color: #16171A;
+    cursor: pointer;
+    font-family: Montserrat;
+    
+}
+
+.row:hover {
+    background-color: #131111;
+}
+/* 
+.pagination {
+    color: wheat;
+    padding : 20;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.MuiPagination-root ul{
+    color: gold;
+}
+
+.MuiPagination-ul {
+    color: blue
+}
+
+.MuiPagination-text{
+    color: wheat;
+} */
+
+.MuiPagination{
+    background-color: gold;
+    color: white;
+}
+
+.MuiPagination PaginationLink{
+    color: white;
+}
+
+.Mui-selected{
+    color: wheat;
+}

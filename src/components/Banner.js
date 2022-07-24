@@ -10,11 +10,12 @@ const Banner = () => {
         }}>
         {/* <div> */}
                 <Container sx={{
-                    height: 400,
+                    // height: "400",
                     display: "flex",
                     flexDirection: "column",
-                    paddingTop: 25,
-                    justifyContent: "space-around"
+                    // paddingBottom: 25,
+                    justifyContent: "space-around",
+                    textAlign: "center",
             }}>
                 <div>
                     <Typography
@@ -32,7 +33,8 @@ const Banner = () => {
                         style={{
                             color: "darkgrey",
                             textTransform: "capitalize",
-                            fontFamily: "Montserrat"
+                            fontFamily: "Montserrat",
+                            paddingBottom: 150,
                         }}
                     >
                         Get all the info regarding your favourite Crypto Currency

@@ -62,7 +62,10 @@ const Carousel = () => {
         )
     });
     return (
-        <div className="Carousel">
+        <div className="Carousel"
+            style={{
+                    paddingBottom: 25,
+                }}>
             <AliceCarousel
                 mouseTracking
                 infinite
@@ -72,7 +75,7 @@ const Carousel = () => {
                 disableButtonsControls
                 responsive={responsive}
                 autoPlay
-                items= {items}
+                items={items}
             />
         </div>
     );
