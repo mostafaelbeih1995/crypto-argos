@@ -37,7 +37,7 @@ const Header = () => {
                         Crypto Argos
                     </Typography>
 
-                        <Select
+                        {/* <Select
                             value={currency}
                             onChange={(e) => setCurrency(e.target.value)}
                             variant="outlined" style={{
@@ -49,7 +49,7 @@ const Header = () => {
                     >
                         <MenuItem value={"USD"}>USD</MenuItem>
                         <MenuItem value ={"EGP"}>EGP</MenuItem>
-                    </Select>
+                    </Select> */}
                 </Toolbar>
             </Container>
 

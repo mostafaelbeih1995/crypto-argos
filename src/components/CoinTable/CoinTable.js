@@ -75,10 +75,10 @@ const CoinTable = () => {
                 <Typography variant="h4" style={{margin: 18, fontFamily: "Montserrat"}}>
                     Crypto currency Prices by Market Cap
                 </Typography>
-                <TextField label="Search For a Crypto Currency.." variant="outlined"
+                {/* <TextField label="Search For a Crypto Currency.." variant="outlined"
                 style={{marginBottom: 20, width: "100%"}}>
                 onChange= {(e) => setSearch(e.target.value)}
-                </TextField>
+                </TextField> */}
                 <TableContainer>
                     {
                         loading ? (
