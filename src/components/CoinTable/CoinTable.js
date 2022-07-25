@@ -1,3 +1,4 @@
+// import Table from 'react-bootstrap/Table';
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { CoinList } from "../../config/api";
@@ -66,16 +67,9 @@ const CoinTable = () => {
     };
 
     return (
+        
         <ThemeProvider theme={theme}>
-            {/* <Container style={{textAlign: "center", color: "white"}}> */}
-             <Container sx={{
-                    // height: "400",
-                    display: "flex",
-                    flexDirection: "column",
-                    // paddingBottom: 25,
-                    justifyContent: "space-around",
-                    textAlign: "center",
-            }}>
+            <Container style={{textAlign: "center", color: "white"}}>
                 <Typography variant="h4" style={{margin: 18, fontFamily: "Montserrat"}}>
                     Crypto currency Prices by Market Cap
                 </Typography>
@@ -95,7 +89,7 @@ const CoinTable = () => {
                                                 <TableCell style={{
                                                     color: "black",
                                                     fontWeight: "700",
-                                                    fontFamily: "Montserrat",
+                                                    fontFamily: "Montserrat"
                                                 }}
                                                     key={head}
                                                     align={head === "Coin" ? "" : "right"}
@@ -150,7 +144,7 @@ const CoinTable = () => {
                                                             <span style={{ color: "darkgrey" }}> {row.name}</span>
                                                         </div>
                                                     </TableCell>
-                                                    <TableCell align= "right" style= {{color: "white"}}>
+                                                    <TableCell align= "right" style= {{color: "white" ,whiteSpace: 'nowrap'}}>
                                                         
                                                         {symbol}{" "}
                                                         {numberWithCommas(row.current_price.toFixed(2))}
@@ -162,7 +156,7 @@ const CoinTable = () => {
                                                         {profit && "+"}
                                                         {row.price_change_percentage_24h.toFixed(2)}%
                                                     </TableCell>
-                                                    <TableCell align="right" style={{color: "white"}}>
+                                                    <TableCell align="right" style={{color: "white", whiteSpace: "nowrap"}}>
                                                         {symbol}{" "}
                                                         {numberWithCommas(
                                                             row.market_cap.toString().slice(0, -6)
@@ -180,7 +174,8 @@ const CoinTable = () => {
                 <Pagination
                     color="primary"
                     style={{
-                        padding: 20,
+                        // padding: 20,
+                        height: 40,
                         width: "100%:",
                         display: "flex",
                         justifyContent: "center",
@@ -194,6 +189,8 @@ const CoinTable = () => {
                 />
             </Container>
         </ThemeProvider>
+        
+        
     );
 }
 
