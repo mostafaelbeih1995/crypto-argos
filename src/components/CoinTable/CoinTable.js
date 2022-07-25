@@ -16,6 +16,15 @@ import styled from "@emotion/styled";
 
 const CoinTable = () => {
 
+    const [isDesktop, setDesktop] = useState(window.innerWidth > 500);
+    const updateMedia = () => {
+        setDesktop(window.innerWidth > 500);
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", updateMedia);
+        return () => window.removeEventListener("resize", updateMedia);
+    })
     const [page, setPage] = useState(1);
 
     const navigate = useNavigate();
@@ -174,13 +183,14 @@ const CoinTable = () => {
                 <Pagination
                     color="primary"
                     style={{
-                        // padding: 20,
-                        height: 40,
-                        width: "100%:",
+                        whiteSpace: "nowrap",
+                        // width: "100%:",
                         display: "flex",
                         justifyContent: "center",
                         backgroundColor: "gold",
                     }}
+                    siblingCount={0}
+                    size={isDesktop? "large" : "small"}
                     count={(handleSearch()?.length / 10).toFixed(0)}
                     onChange={(_, value) => {
                         setPage(value);
