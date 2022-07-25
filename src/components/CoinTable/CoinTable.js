@@ -12,10 +12,6 @@ import { numberWithCommas } from "../Carousel";
 import { useNavigate } from "react-router-dom";
 import styled from "@emotion/styled";
 
-const CustomPagination = styled(Pagination)(({ theme }) => ({
-    backgroundColor: "blue",
-    color: "white", 
-}));
 
 const CoinTable = () => {
 
@@ -71,7 +67,15 @@ const CoinTable = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <Container style={{textAlign: "center", color: "white"}}>
+            {/* <Container style={{textAlign: "center", color: "white"}}> */}
+             <Container sx={{
+                    // height: "400",
+                    display: "flex",
+                    flexDirection: "column",
+                    // paddingBottom: 25,
+                    justifyContent: "space-around",
+                    textAlign: "center",
+            }}>
                 <Typography variant="h4" style={{margin: 18, fontFamily: "Montserrat"}}>
                     Crypto currency Prices by Market Cap
                 </Typography>
