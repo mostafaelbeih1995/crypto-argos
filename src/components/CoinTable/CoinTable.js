@@ -189,7 +189,7 @@ const CoinTable = () => {
                         justifyContent: "center",
                         backgroundColor: "gold",
                     }}
-                    siblingCount={0}
+                    siblingCount={1}
                     size={isDesktop? "large" : "small"}
                     count={(handleSearch()?.length / 10).toFixed(0)}
                     onChange={(_, value) => {
