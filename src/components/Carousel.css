@@ -4,7 +4,7 @@ Carousel{
     align-items: center;
 }
 
-CrouselItem{
+CarouselItem{
     display: flex;
     flex-direction: column;
     align-items: center;
